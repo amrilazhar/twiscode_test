@@ -1,17 +1,17 @@
 /* Soal no 1 : Tabel Data Transaksi */
-USE db_transaksi
+USE db_transaksi;
 CREATE TABLE data_transaksi (
     id int NOT NULL AUTO_INCREMENT primary key,
     tanggal_order timestamp DEFAULT CURRENT_TIMESTAMP,
     status_pelunasan varchar(20),
-    tanggal_pembayaran timestamp DEFAULT CURRENT_TIMESTAMP
+    tanggal_pembayaran timestamp
 );
 
-INSERT INTO data_transaksi (id,status_pelunasan) values (11, "lunas");
-INSERT INTO data_transaksi (id,status_pelunasan) values (12, "lunas");
+INSERT INTO data_transaksi (id,status_pelunasan, tanggal_pembayaran) values (11, "lunas", "2022-04-27 11:15:09");
+INSERT INTO data_transaksi (id,status_pelunasan, tanggal_pembayaran) values (12, "lunas", "2022-04-27 11:15:09");
 INSERT INTO data_transaksi (id,status_pelunasan) values (13, "pending");
 INSERT INTO data_transaksi (id,status_pelunasan) values (14, "pending");
-INSERT INTO data_transaksi (id,status_pelunasan) values (15, "lunas");
+INSERT INTO data_transaksi (id,status_pelunasan, tanggal_pembayaran) values (15, "lunas", "2022-04-27 11:15:09");
 INSERT INTO data_transaksi (id,status_pelunasan) values (16, "pending");
 
 /* Soal no 2 : Tabel Detail Transaksi */
